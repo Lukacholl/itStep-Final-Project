@@ -219,7 +219,7 @@ h4{
 /* responsive */
 @media only screen and (max-width: 840px) {
     #coolGame{
-        font-size: 35px;
+        font-size: 30px;
         top: 15%;
         transform: translate(-50%, -15%);
     }
@@ -227,7 +227,7 @@ h4{
 
 @media only screen and (max-width: 590px) {
     #coolGame{
-        font-size: 20px;
+        font-size: 25px;
         top: 20%;
         transform: translate(-50%, -20%);
     }
