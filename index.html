@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cool Quiz Game</title>
+</head>
+<body>
+    <h3 id="highH3" class="hidden"></h3>
+    
+    <p id="countDown"><span class="hidden" id="span">Your Score Was: </span></p>
+
+    <!-- START -->
+    <h1 id="coolGame">Cool Quiz Game</h1>
+    
+    <div id="rulesDiv">
+    <h3 id="rulesText">Note: Read Rules Before Playing</h3>
+    <button id="rulesButton">Rules</button>
+    <button id="firstButton">START</button>
+    </div>
+    <div id="readRules" class="hidden">
+    <h2 id="startH2">Rules: <br>
+    1. You will have 60 seconds to complete a level 
+    <br> 2. There will be total of 3 levels <br>
+         3. If you get questions wrong 3 times you automatically lose.</h2>
+    <button id="goBack">Go back</button>
+    </div>
+
+    <!-- DIVS -->
+
+    <!-- first -->
+    <div id="firstEquat" class="hidden">
+        <h4>What is 5 + 5?</h4>
+        <input type="text" placeholder="Enter Your Answer" id="firstInput">
+        <button id="firstEquatButton" class="equatButton" >SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- second -->
+    <div id="secondEquat" class="hidden">
+        <h4>What is 7 + 14?</h4>
+        <input type="text" id="secondInput" placeholder="Enter Your Answer">
+        <button id="secondEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- third -->
+    <div id="thirdEquat" class="hidden">
+        <h4>What is 4 x 2?</h4>
+        <input type="text" id="thirdInput" placeholder="Enter Your Answer">
+        <button id="thirdEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- fourth -->
+    <div id="fourthEquat" class="hidden">
+        <h4>What is 4(3 + 5)?</h4>
+        <input type="text" id="fourthInput" placeholder="Enter Your Answer">
+        <button id="fourthEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- fifth -->
+    <div id="fifthEquat" class="hidden">
+        <h4>What is 4 x 2 + (3 + 2)?</h4>
+        <input type="text" id="fifthInput" placeholder="Enter Your Answer">
+        <button id="fifthEquatbutton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- sixth -->
+    <div id="sixthEquat" class="hidden">
+        <h4>What is 1900 - 137 + 2?</h4>
+        <input type="text" id="sixthInput" placeholder="Enter Your Answer">
+        <button id="sixthEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- seventh -->
+    <div id="seventhEquat" class="hidden">
+        <h4>What is -5 + 7?</h4>
+        <input type="text" id="seventhInput" placeholder="Enter Your Answer">
+        <button id="seventhEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- eighth -->
+    <div id="eighthEquat" class="hidden">
+        <h4>What is 11² + 20?</h4>
+        <input type="text" id="eighthInput" placeholder="Enter Your Answer">
+        <button id="eighthEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- ninth -->
+    <div id="ninthEquat" class="hidden">
+        <h4>What is √1000?</h4>
+        <input type="text" id="ninthInput" placeholder="Enter Your Answer">
+        <button id="ninthEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- tenth -->
+    <div id="tenthEquat" class="hidden">
+        <h4>What is 2² x 4² + 7 x 2?</h4>
+        <input type="text" id="tenthInput" placeholder="Enter Your Answer">
+        <button id="tenthEquatButton" class="equatButton">SUBMIT</button>
+        <p class="lostGames"></p>
+    </div>
+    <!-- YOU WON -->
+    <div id="winningDiv" class="hidden">
+
+        <h1>CONGRATULATIONS YOU WON!</h1>
+        <button id="redo" type="submit">REDO</button>
+
+    </div>
+    <!-- YOU LOST -->
+    <div id="losingDiv" class="hidden">
+        <h1>Unfortunately, You LOST!</h1>
+        <button id="retry" type="submit">RETRY</button>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
