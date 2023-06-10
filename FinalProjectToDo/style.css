@@ -1,0 +1,238 @@
+/* DEFAULTS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* START */
+
+#firstButton{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(167, 240, 20);
+    color: black;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+#goBack{
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+}
+
+#readRules{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#coolGame{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+#rulesText{
+    font-family: cursive;
+}
+
+#rulesDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+#rulesButton{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(226, 163, 45);
+}
+
+#startH2{
+    text-align: center;
+    color: blue;
+}
+
+.hidden{
+    display: none !important; 
+} 
+
+/* COUNTDOWN */
+
+#countDown{
+    color: blue;
+    border: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -16%);
+    font-size: 25px;
+}
+
+
+/* DIVS */
+
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.equatButton{
+    padding: 15px 100px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+
+    background-color: rgb(12, 12, 201);
+    color: black;
+    font-weight: bolder;
+}
+
+input{
+    width: 250px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(18, 192, 192);
+    color: red;
+    
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus{
+    border: none;
+}
+
+h4{
+    font-size: 110%;
+    font-style: italic;
+    
+}
+
+
+#winningDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+}
+
+#winningDiv > h1{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 55px;
+}
+
+#losingDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* END */
+
+.winningBody{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.losingBody{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+#redo{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+#retry{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+/* responsive */
+@media only screen and (max-width: 840px) {
+    #coolGame{
+        font-size: 35px;
+        top: 15%;
+        transform: translate(-50%, -15%);
+    }
+  }
+
+@media only screen and (max-width: 590px) {
+    #coolGame{
+        font-size: 27px;
+        top: 20%;
+        transform: translate(-50%, -20%);
+    }
+    #countDown{
+        top: 25%;
+        transform: translate(-50%, -25%);
+    }
+  }
