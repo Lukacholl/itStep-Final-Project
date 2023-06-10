@@ -227,7 +227,7 @@ h4{
 
 @media only screen and (max-width: 590px) {
     #coolGame{
-        font-size: 25px;
+        font-size: 18px;
         top: 20%;
         transform: translate(-50%, -20%);
     }
